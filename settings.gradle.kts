@@ -26,7 +26,7 @@ rootProject.name = "base"
 include(":app")
 
 // core
-include(":core:designsystem")
+include(":core:designsystem", ":core:domain", ":core:data")
 
 // feature
 include(":feature:main")

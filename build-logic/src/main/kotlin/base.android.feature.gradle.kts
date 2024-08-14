@@ -38,6 +38,8 @@ configureComposeAndroid()
 dependencies {
     val libs = project.extensions.libs
     implementation(project(":core:designsystem"))
+    implementation(project(":core:domain"))
+    implementation(project(":core:data"))
 
     implementation(libs.findLibrary("androidx.core.ktx").get())
     implementation(libs.findLibrary("androidx.lifecycle.runtime.ktx").get())
